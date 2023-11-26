@@ -16,7 +16,7 @@
 <meta property="og:description" content="一、概念规则表达式（regular expression）  是一个对象，叫正则对象； 是一个强大的字符串匹配和处理工具（除了处理字符串，其他的什么都做不了）； 它是火星文，一般人很难理解（程序界的摩斯码）； 它还是一种思维方式； 容易学，但是也非常容易忘记。  二、使用场景 字符串匹配和替换 表单验证： 比如网站要求你输入的QQ号为5~12位数字 电话号码必须是010-12345678或0731">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-26T04:11:21.000Z">
-<meta property="article:modified_time" content="2023-11-26T04:15:28.801Z">
+<meta property="article:modified_time" content="2023-11-26T04:25:49.068Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -195,7 +195,53 @@
 </ul>
 </li>
 </ul>
-<h3 id="三、正则规则怎么写"><a href="#三、正则规则怎么写" class="headerlink" title="三、正则规则怎么写"></a>三、正则规则怎么写</h3>
+<h3 id="三、正则规则怎么写"><a href="#三、正则规则怎么写" class="headerlink" title="三、正则规则怎么写"></a>三、正则规则怎么写</h3><ul>
+<li>关键字原文-最简单的正则写法<ul>
+<li>String reg &#x3D; “abc”&#x2F;&#x2F;表示匹配abc3个字母</li>
+<li>String reg &#x3D; “我们”&#x2F;&#x2F;表示匹配我们2个字</li>
+<li>String reg &#x3D; “1”&#x2F;&#x2F;表示匹配1这个数字</li>
+</ul>
+</li>
+<li>区间<ul>
+<li>[]表示范围</li>
+<li>String reg &#x3D; “[123]”&#x2F;&#x2F;表示1或2或3中任意一个</li>
+<li>String reg &#x3D; “[0-9]”&#x2F;&#x2F;表示0-9中的任意一个</li>
+<li>String reg &#x3D; “[a-z]”&#x2F;&#x2F;表示a-z中任意一个</li>
+<li>String reg &#x3D; “[a-zA-Z]”&#x2F;&#x2F;表示a-z.A-Z中任意一个</li>
+<li>String reg &#x3D; “[0-9a-z-_]”&#x2F;&#x2F;表示0-9，a-z，-,_中任意一个</li>
+<li>String reg &#x3D; “[\u4e00-\u9fa5]”&#x2F;&#x2F;表示是中文</li>
+</ul>
+</li>
+<li>转义字符（升级版的区间）<ul>
+<li>\d 表示匹配所有的数字，相当于[0-9]</li>
+<li>\D 表示非数字，即\d的反面，相当于[^0-9]</li>
+<li>\w 匹配所有的字母、数字和下划线，相当于[0-9a-zA-Z_]</li>
+<li>\W 取反，表示非字母、数字、下划线，相当于[^0-9a-zA-Z_]</li>
+<li>\s 表示空格</li>
+<li>\S 表示非空格，可以用来替换字符串空格</li>
+<li>. 表示匹配任意字符，慎用，如果要匹配.本身，需要使用.</li>
+</ul>
+</li>
+<li>量词，修饰它前面的正则，表示可以出现的次数<ul>
+<li>{n,m} 刚好出现n到m次</li>
+<li>{n} 刚好出现n次</li>
+<li>{n,} 最少2次</li>
+<li>* 任意次，即可有可无，多了不限，也可以这样表示{0,}</li>
+<li>? 表示0次或1次</li>
+<li><ul>
+<li>表示至少1次，等价于{1,}</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>以什么开头、以什么结束，修饰作用（主要用于表单验证中）<ul>
+<li>如果^写在第1位，则表示以什么开头，用来修饰它后面的正则规则String reg &#x3D; “^\d” &#x2F;&#x2F;表示要以数字开头</li>
+<li>如果$写在最后面，即&#x2F;的前面一位，表示以什么结束，修饰它前面的那个正则</li>
+</ul>
+</li>
+<li>取反-修饰作用<br>^用在区间中，则表示取反,比如[^123]</li>
+</ul>
+
       
 
       
