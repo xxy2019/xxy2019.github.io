@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>正则表达式 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="一、概念规则表达式（regular expression）  是一个对象，叫正则对象； 是一个强大的字符串匹配和处理工具（除了处理字符串，其他的什么都做不了）； 它是火星文，一般人很难理解（程序界的摩斯码）； 它还是一种思维方式； 容易学，但是也非常容易忘记。  二、使用场景 字符串匹配和替换 表单验证： 比如网站要求你输入的QQ号为5~12位数字 电话号码必须是010-12345678或0731">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="http://example.com/2023/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、概念规则表达式（regular expression）  是一个对象，叫正则对象； 是一个强大的字符串匹配和处理工具（除了处理字符串，其他的什么都做不了）； 它是火星文，一般人很难理解（程序界的摩斯码）； 它还是一种思维方式； 容易学，但是也非常容易忘记。  二、使用场景 字符串匹配和替换 表单验证： 比如网站要求你输入的QQ号为5~12位数字 电话号码必须是010-12345678或0731">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-26T04:11:21.000Z">
+<meta property="article:modified_time" content="2023-11-26T04:15:28.801Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-正则表达式" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    <h1 class="article-title" itemprop="name">
+      正则表达式
     </h1>
   
 
@@ -197,6 +199,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -204,16 +227,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/11/26/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2023/11/26/cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">cron表达式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -233,158 +315,14 @@
 
 
 
-
   
-    <article id="post-cron表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/26/cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/">cron表达式</a>
-    </h1>
   
 
-        
-        <a href="/2023/11/26/cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2023-11-26T03:56:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-11-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一、cron表达式的组成"><a href="#一、cron表达式的组成" class="headerlink" title="一、cron表达式的组成"></a>一、cron表达式的组成</h3><p>cron表达式是一个字符串，由6到7个字段组成，用空格分隔。其中前6个字段是必须的，最后一个是可选的。每个字段的含义如图所示：<br><img src="/2023/11/26/cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/image1.png" alt="image.png"><br>从左到右，依次对每个字段指定相应的值，就可以确定一个任务的执行时间点和周期了，值可以由数字配合字符来组合。</p>
-<h3 id="二、99-的情况下会用到的字符"><a href="#二、99-的情况下会用到的字符" class="headerlink" title="二、99%的情况下会用到的字符"></a>二、99%的情况下会用到的字符</h3><ul>
-<li>【*】：每的意思。在不同的字段上，就代表每秒，每分，每小时等。</li>
-<li>【-】：指定值的范围。比如[1-10]，在秒字段里就是每分钟的第1到10秒，在分就是每小时的第1到10分钟，以此类推。</li>
-<li>【,】：指定某几个值。比如[2,4,5]，在秒字段里就是每分钟的第2，第4，第5秒，以此类推。</li>
-<li>【&#x2F;】：指定值的起始和增加幅度。比如[3&#x2F;5]，在秒字段就是每分钟的第3秒开始，每隔5秒生效一次，也就是第3秒、8秒、13秒，以此类推。</li>
-<li>【?】：仅用于【日】和【周】字段。因为在指定某日和周几的时候，这两个值实际上是冲突的，所以需要用【?】标识不生效的字段。比如【0 1 * * * ?】就代表每年每月每日每小时的1分0秒触发任务。这里的周就没有效果了。</li>
-</ul>
-<h3 id="极少能用到的字符"><a href="#极少能用到的字符" class="headerlink" title="极少能用到的字符"></a>极少能用到的字符</h3><ul>
-<li>SUN：仅用于【周】字段，表示星期日。也可以用数字1设置。周日到周六分别为SUN，MON，TUE，WED，THU，FRI和SAT，对应数字1，2，3，4，5，6，7。目前Quartz支持。</li>
-<li>L：即last，用于【日】【周】字段。这里需要注意的是，在不同的字段的不同使用方式，其含义有所差别。<ul>
-<li>用于日字段：直接使用L代表每个月的最后一天。也支持偏移量的方式，配置[L-1]则代表每月的倒数第二天。</li>
-<li>用于周字段：直接使用L代表每周的最后一天，也就是等效于[7]或[SAT]，但是如果配合上数字，比如[7L]，则代表每个月最后一个周六，等效于[SATL]。目前Quartz支持。</li>
-</ul>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/11/26/cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-AS安装markdown插件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/">AS安装markdown插件</a>
-    </h1>
   
 
-        
-        <a href="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2023-11-18T08:31:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="AS安装Markdown插件，实现浏览编辑"><a href="#AS安装Markdown插件，实现浏览编辑" class="headerlink" title="AS安装Markdown插件，实现浏览编辑"></a>AS安装Markdown插件，实现浏览编辑</h3><ol>
-<li>安装插件，搜索Markdown，可安装图中两个插件：<br> <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image1.png" alt="image.png"></li>
-<li>安装jcef，注意JDK版本与jbr版本尽量统一</li>
-</ol>
-<ul>
-<li>下载jbr安装文件:<a target="_blank" rel="noopener" href="https://github.com/JetBrains/JetBrainsRuntime">下载地址</a><br>  这里因为我AS里的jdk版本为11，所以我选择下载jcef11的版本：<br>  <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image2.png" alt="image.png"></li>
-<li>AS内部双击Shift搜索Choose Boot Java Runtime出现如下界面<br>  <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image3.png" alt="image.png"></li>
-<li>选择刚刚下载的离线安装包,然后安装即可<br>  <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image4.png" alt="image.png"><br>  <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image5.png" alt="image.png"><br>  <img src="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/image6.png" alt="image.png"></li>
-<li>安装后重启AS即可</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/11/18/AS%E5%AE%89%E8%A3%85markdown%E6%8F%92%E4%BB%B6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -407,8 +345,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
